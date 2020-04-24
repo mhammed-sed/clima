@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/city_background"
+    >
+<TextView
+    android:id="@+id/changeCity"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Change City"
+    android:textSize="56sp"
+    android:textColor="@android:color/white"
+    android:layout_below="@id/left"
+    android:layout_marginTop="20dp"
+    android:layout_centerHorizontal="true"
+    />
+<ImageButton
+    android:id="@+id/left"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/left"
+    android:backgroundTint="#00050000"
+    />
+    <EditText
+        android:layout_centerInParent="true"
+        android:id="@+id/entercity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter City Name"
+        android:background="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="32sp"
+
+        />
+
+</RelativeLayout>

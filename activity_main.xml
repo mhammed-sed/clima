@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/weather_background"
+    >
+
+    <ImageButton
+        android:id="@+id/changeCityButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/change_city_symbol_small"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        android:backgroundTint="#05000000"
+        />
+    <TextView
+        android:id="@+id/weatherSymbolIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NA"
+        android:textColor="@android:color/white"
+        android:textSize="56sp"
+        android:layout_below="@id/changeCityButton"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="56dp"
+     />
+
+<FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:id="@+id/fram"
+    >
+    <ImageView
+        android:id="@+id/dunno"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/dunno"
+
+        />
+</FrameLayout>
+    <TextView
+        android:id="@+id/city"
+        android:layout_below="@id/fram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fetching location"
+        android:textSize="45sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>
